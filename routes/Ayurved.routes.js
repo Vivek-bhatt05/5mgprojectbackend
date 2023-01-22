@@ -1,5 +1,5 @@
 const express = require("express")
-const { AyurvedaModel } = require("../Models/Ayurveda.model")
+const { AyurvedaModel } = require("../models/Ayurveda.model")
 
 
 
