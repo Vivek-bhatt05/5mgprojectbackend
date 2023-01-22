@@ -15,6 +15,7 @@ const {DigestRoute} =require("./routes/Digestivecare.routes")
 const {HairRoute} =require("./routes/Hair.routes")
 const {HerbsRoute} =require("./routes/Herbs.routes")
 const cartRouter = require("./routes/cart.route")
+const PORT=process.env.PORT || 8080;
 
 require('dotenv').config()
 
@@ -59,7 +60,7 @@ app.use("/ayurveda", AyurvedaRoute);
 // ayurveda page-----
 
 
-app.listen(process.env.Port,async()=>{
+app.listen(PORT,async()=>{
     try{
         await connection
         console.log("Connected to database")
